@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { HiMenu, HiX } from "react-icons/hi";
+import Logo from '../../assets/images/qrcode.png'
 
 const Navbar = () => {
     const [showMenu,setShowMenu] = useState(false);
@@ -9,9 +10,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className='w-full py-4 shadow-lg bg-white'>
+        <div className='w-full py-4 shadow-lg '>
             <div className='w-11/12 sm:w-3/4 mx-auto flex items-center justify-between'>
-                <h1 className='text-2xl sm:text-3xl font-bold text-blue-900'>QRCode</h1>
+                <img src={Logo} alt='logo' className='w-10'/>
                 <div className='hidden sm:flex items-center justify-between gap-20 text-blue-900'>
                     <a href="#">Home</a>
                     <a href="#">QR Generator</a>
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <button className='px-6 py-2 text-blue-900 border border-blue-900 rounded-lg'>Login</button>
                     <button className='px-6 py-2 text-white border bg-blue-900 rounded-lg'>Sign Up</button>
                 </div>
-                <div>
+                <div className='sm:hidden'>
                     <HiMenu 
                         className='sm:hidden text-2xl text-blue-900 '
                         onClick={handleMenu}
