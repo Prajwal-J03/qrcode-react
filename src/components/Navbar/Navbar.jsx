@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className='w-full py-4 shadow-lg '>
             <div className='w-11/12 sm:w-3/4 mx-auto flex items-center justify-between'>
-                <img src={Logo} alt='logo' className='w-10'/>
+                <img src={Logo} alt='logo' className='w-10 cursor-pointer'/>
                 <div className='hidden sm:flex items-center justify-between gap-20 text-blue-900'>
                     <a href="#">Home</a>
                     <a href="#">QR Generator</a>
@@ -38,8 +38,8 @@ const Navbar = () => {
                             <a href="#">QR Generator</a>
                             <a href="#">About</a>
                             <a href="#">Contact</a>
-                            <button className='px-6 py-2 text-blue-900 border border-blue-900 rounded-lg'>Login</button>
-                            <button className='px-6 py-2 text-white border bg-blue-900 rounded-lg'>Sign Up</button>
+                            <button className='px-6 py-2 text-blue-900 border border-blue-900 rounded-lg cursor-pointer'>Login</button>
+                            <button className='px-6 py-2 text-white border bg-blue-900 rounded-lg cursor-pointer'>Sign Up</button>
                         </div>                    
                     }
                 </div>
